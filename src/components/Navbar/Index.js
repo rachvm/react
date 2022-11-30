@@ -5,16 +5,13 @@ const linkStyle = {
     color: "white",
 }
 
-function Navbar () {
+export default function Navbar () {
     return(
-        <nav className="navbar">
-            <div className="links" style={{backgroundColor: "#37bbc7", paddingTop: "40px", paddingBottom: "10px", fontFamily: "Lucida Sans",}}>
-                <Link to="/" style={linkStyle}>Home</Link>
-                <Link to="/Page1" style={linkStyle}>Page1</Link>
-                <Link to="/Page2" style={linkStyle}>Page2</Link>
-            </div>
+        <nav className="navbar" style={{backgroundColor: "#37bbc7", paddingTop: "40px", paddingBottom: "10px", fontFamily: "Lucida Sans",}}>
+            <Link to="/Home" style={linkStyle}>Home</Link>
+            <Link to="/Page1" style={linkStyle}>Page1</Link>
+            <Link to="/Page2" style={linkStyle}>Page2</Link> 
         </nav>
     );
 };
 
-export default Navbar;
